@@ -1,1 +1,2 @@
-TechCon 2024 website built with HTML.
+Created the About page with history, mission, and past speakers.
+
