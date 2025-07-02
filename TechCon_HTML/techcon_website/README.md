@@ -1,2 +1,1 @@
-Created the About page with history, mission, and past speakers.
-
+1. Building the Homepage for TechCon 2024 Conference Website
