@@ -1,4 +1,5 @@
 0. Building a Dynamic Content Generator with Advanced DOM Manipulation
+
 # Dynamic Quote Generator
 
 This project is a simple web application that shows random quotes and lets the user add new quotes with categories. It was built using advanced DOM manipulation in JavaScript.
