@@ -8,3 +8,4 @@ This project is a simple web application that shows random quotes and lets the u
 - Display random quotes from different categories
 - Add new quotes dynamically using a form
 - Update the DOM without reloading the page
+
