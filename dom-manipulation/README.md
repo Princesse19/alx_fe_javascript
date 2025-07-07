@@ -9,3 +9,6 @@ This project is a simple web application that shows random quotes and lets the u
 - Add new quotes dynamically using a form
 - Update the DOM without reloading the page
 
+1. Implementing Web Storage and JSON Handling
+
+
