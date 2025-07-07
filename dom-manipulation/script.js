@@ -93,6 +93,8 @@ async function fetchQuotesFromServer() {
       populateCategories();
       filterQuotes();
       showConflictNotice();
+    } else {
+      showSyncNotification();
     }
   } catch (err) {
     console.error("Failed to fetch from server:", err);
@@ -107,6 +109,10 @@ function showConflictNotice() {
   if (conflictNotice) {
     conflictNotice.style.display = "block";
   }
+}
+
+function showSyncNotification() {
+  alert("Quotes synced with server!");
 }
 
 function resolveManually() {
