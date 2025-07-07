@@ -99,6 +99,10 @@ async function fetchQuotesFromServer() {
   }
 }
 
+function syncQuotes() {
+  fetchQuotesFromServer();
+}
+
 function showConflictNotice() {
   if (conflictNotice) {
     conflictNotice.style.display = "block";
@@ -162,9 +166,9 @@ resolveBtn.addEventListener("click", resolveManually);
 loadQuotes();
 populateCategories();
 filterQuotes();
-fetchQuotesFromServer();
+syncQuotes();
 
-setInterval(fetchQuotesFromServer, 60000);
+setInterval(syncQuotes, 60000);
 
 const last = sessionStorage.getItem("lastQuote");
 if (last) {
