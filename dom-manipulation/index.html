@@ -9,13 +9,19 @@
 
   <h1>Dynamic Quote Generator</h1>
 
-  <!-- Display area for random or added quotes -->
-  <div id="quoteDisplay" style="margin-bottom: 20px; font-size: 18px;"></div>
+  <!-- Category Filter -->
+  <label for="categoryFilter">Filter by Category:</label>
+  <select id="categoryFilter" onchange="filterQuotes()">
+    <option value="all">All Categories</option>
+  </select>
 
-  <!-- Button to show a random quote -->
+  <!-- Display area -->
+  <div id="quoteDisplay" style="margin: 20px 0; font-size: 18px;"></div>
+
+  <!-- Show random quote -->
   <button id="newQuote">Show New Quote</button>
 
-  <!-- Form to add a new quote -->
+  <!-- Add new quote -->
   <h2>Add a New Quote</h2>
   <div>
     <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
@@ -23,17 +29,13 @@
     <button onclick="addQuote()">Add Quote</button>
   </div>
 
-  <!-- Export and Import section -->
+  <!-- Export/Import -->
   <h2>Export / Import Quotes</h2>
   <div>
-    <!-- Export button -->
     <button onclick="exportQuotesToJson()">Export Quotes as JSON</button>
-
-    <!-- Import file input -->
     <input type="file" id="importFile" accept=".json" onchange="importFromJsonFile(event)" />
   </div>
 
-  <!-- JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
