@@ -18,7 +18,7 @@ function showRandomQuote() {
 }
 
 function createAddQuoteForm() {
-  // Empty function
+  // Empty function as form is in HTML
 }
 
 function addQuote() {
@@ -33,8 +33,17 @@ function addQuote() {
     return;
   }
 
+  // Add new quote to array
   quotes.push({ text: newText, category: newCategory });
 
+  // Create a new paragraph element for the new quote
+  const newQuoteElem = document.createElement("p");
+  newQuoteElem.textContent = `"${newText}" — ${newCategory}`;
+
+  // Append the new quote to the quoteDisplay area
+  quoteDisplay.appendChild(newQuoteElem);
+
+  // Clear input fields
   textInput.value = "";
   categoryInput.value = "";
 
